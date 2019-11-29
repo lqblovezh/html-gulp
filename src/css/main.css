@@ -1,0 +1,24 @@
+::selection {
+  color: red;
+  /* text-shadow: none */
+}
+
+
+.clearfix::after,
+.clearfix::before {
+  content: ",";
+  display: table;
+}
+
+
+.clearfix::after {
+  clear: both;
+}
+
+body{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  background-color: #fff;
+  right: auto;
+  display: table;
+}

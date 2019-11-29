@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="src/css/main.css">
+  <title>Document</title>
+</head>
+
+<style lang="">
+  .test {
+    /* fz20 */
+    font-size: 20px;
+    /* va:m */
+    vertical-align: middle;
+    /* ta:c */
+    text-align: center;
+    /* bgsz:cn */
+    background-size: contain;
+    /* bd+ */
+    border: 1px solid #000;
+    /* bdtrr4 */
+    border-top-right-radius: 4px;
+    /* bdrs */
+    border-radius: 5px;
+    /* bxsh */
+    box-shadow: inset hoff voff blur #000;
+    /* df */
+    display: flex;
+    /* 主轴方向 fxd:r*/
+    flex-direction: row;
+    /* 在一条轴线上的换行方式 fxw:w*/
+    flex-wrap: wrap;
+    /* 主轴上的对齐方式 jc:c */
+    justify-content: center;
+    /* 在交叉轴上如何对齐 ai:c */
+    align-items: center;
+    /* 多根轴线的对齐方式 ac:c */
+    align-content: center;
+    /* ov */
+    overflow: hidden;
+    /* tov */
+    text-overflow: ellipsis;
+    /* whs:n */
+    white-space: normal;
+    /* trf:t */
+    transform: translate(x, y);
+    /* trf:sc */
+    transform: scale(x, y);
+    /* trsde */
+    transition-delay: time;
+    /* trsdu */
+    transition-duration: time;
+    /* bxz:bb */
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+  }
+</style>
+
+<body>
+  <!-- gt(>)/lt(<)/gte(>=)/lte(<=) -->
+  <!--[if lte IE 8]>
+  <style type="text/css">
+  </style>
+<![endif]-->
+  <img src="http://xnjd.xnjd.xc4.kf.gli.cn/files/view/common_images/2019/09/20190910093336_5d76fd7058010.jpg"
+    srcset="http://xnjd.xnjd.xc4.kf.gli.cn/files/view/common_images/2019/09/20190910093336_5d76fd7058010.jpg 1440w,http://jyz.x.gli.cn/storage/read/images/2019/02/09105620_5c5e41546b8bc.png 1000w,http://jyz.x.gli.cn/storage/read/images/2019/01/08171524_5c346a2cbad63.png 500w"
+    alt="">
+  <ul id="test">
+    <li class="item">1</li>
+    <li class="item">2</li>
+    <li class="item">3</li>
+    <li class="item">4</li>
+  </ul>
+</body>
+<script type='text/javascript'>
+  var list = document.querySelectorAll('.item')
+  for (let index = 0; index < list.length; index++) {
+    list[index].onclick = function () {
+      console.log(index);
+    }
+  }
+</script>
+
+</html>
